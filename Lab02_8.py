@@ -64,6 +64,38 @@ for key, name in students.items():
     else:
         print("Wrong Answer! The correct answer is 0.")
 
+# show score
+    print("Score:", score) #
+
+    # performance
+    if score == 3: #if the score is 3, then the performance is excellent
+        print("Performance: Excellent")
+    elif score == 2: #if the score is 2, then the performance is good
+        print("Performance: Good")
+    elif score == 1: #if the score is 1, then the performance is average
+        print("Performance: Average")
+    else: #if the score is 0, then the performance is poor
+        print("Performance: Poor")
+
+    # certificate
+    if score >= 2: # if the score is 2 or more, then the student gets a certificate
+        print("Certificate: Yes")
+    else:
+        print("Certificate: No")
+
+    # warning
+    if score == 0: # if the score is 0, it willprint a warning message
+        print("Warning: Score is 0")
+
+    # stars
+    print("Stars:") # if the score is 0, it will not print any stars, or it will print stars according to the score
+    if score == 0:
+        print("")
+    else:
+        i = 1
+        while i <= score:
+            print("*" * i)
+            i = i + 1
 
 
 
