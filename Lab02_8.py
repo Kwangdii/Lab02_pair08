@@ -33,7 +33,36 @@ while True:
 print("\nList of Students:")
 for key, value in students.items():
     print(f"{key}. {value}")    
+# Quiz for the students
+# Loop through each student
+for key, name in students.items():  
+    # Print quiz heading
+    print(f"\n--- Quiz for {name} ---")  
+    score = 0   # Start score at 0
+   
+    # Question 1: 2 + 2
+    ans1 = int(input("Q1: 2 + 2 = "))
+    if ans1 == 4:
+        print("Correct Answer!")   # Feedback
+        score += 1
+    else:
+        print("Wrong Answer! The correct answer is 4.")
 
+    # Question 2: 3 * 3
+    ans2 = int(input("Q2: 3 * 3 = "))
+    if ans2 == 9:
+        print("Correct Answer!")
+        score += 1
+    else:
+        print("Wrong Answer! The correct answer is 9.")
+
+    # Question 3: 5 - 5
+    ans3 = int(input("Q3: 5 - 5 = "))
+    if ans3 == 0:
+        print("Correct Answer!")
+        score += 1
+    else:
+        print("Wrong Answer! The correct answer is 0.")
 
 
 
