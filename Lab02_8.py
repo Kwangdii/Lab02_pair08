@@ -65,6 +65,7 @@ for key, name in students.items():
         print("Wrong Answer! The correct answer is 0.")
 
 # show score
+    print()
     print("Score:", score) #
 
     # performance
